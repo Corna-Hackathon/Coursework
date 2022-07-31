@@ -6,19 +6,63 @@
     <title>coursework</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
   </head>
   <body>
     <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+      <button id="connect">Connect</button>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Birthday</td>
+          <td>Phone</td>
+          <td>Sex</td>
+          <td> </td>
+        </tr>
+      </table>
+
+      <h2>Register</h2>
+      <form id="register">
+        <label for="firstNameCreate">First Name</label>
+        <input type="text" id="firstNameCreate"> <br/>
+        <label for="lastNameCreate">Last Name</label>
+        <input type="text" id="lastNameCreate"> <br/>
+        <span>Sex:</span>
+        <input type="radio" name="sex" id="maleCreate" value="male" checked>
+        <label for="maleCreate">Male</label>
+        <input type="radio" name="sex" id="femaleCreate" value="female">
+        <label for="femaleCreate">Female</label> <br/>
+        <label for="birthCreate">Date of birth</label>
+        <input type="date" id="birthCreate"> <br/>
+        <label for="phoneCreate">Phone</label>
+        <input type="text" id="phoneCreate"> <br/>
+        <label for="addressCreate">Address</label>
+        <input type="text" id="addressCreate"> <br/>
+        <input type="submit" value="Save" id="save">
+        <input type="button" value="Cancel">
       </form>
-      <section id="greeting"></section>
+
+      <h2>Update</h2>
+      <form id="update">
+        <label for="firstNameUpdate">First Name</label>
+        <input type="text" id="firstNameUpdate"> <br/>
+        <label for="lastNameUpdate">Last Name</label>
+        <input type="text" id="lastNameUpdate"> <br/>
+        <span>Sex:</span>
+        <input type="radio" name="sex" id="maleUpdate" value="male" checked>
+        <label for="maleUpdate">Male</label>
+        <input type="radio" name="sex" id="femaleUpdate" value="female">
+        <label for="femaleUpdate">Female</label><br/>
+        <label for="birthUpdate">Date of birth</label>
+        <input type="date" id="birthUpdate"> <br/>
+        <label for="phoneUpdate">Phone</label>
+        <input type="text" id="phoneUpdate"> <br/>
+        <label for="addressUpdate">Address</label>
+        <input type="text" id="addressUpdate"> <br/>
+        <input type="submit" value="Save" id="save">
+        <input type="button" value="Cancel">
+      </form>
     </main>
   </body>
 </html>
+
+
